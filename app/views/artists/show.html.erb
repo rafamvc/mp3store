@@ -25,6 +25,13 @@
   <%= @artist.age %>
 </p>
 
+<p>
+  <b>Musics:</b>
+  <% @artist.musics.each do |m| %>
+     <br/> <%= link_to m.name, m %>
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>

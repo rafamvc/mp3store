@@ -1,5 +1,6 @@
 class Artist < ActiveRecord::Base
   has_and_belongs_to_many :albums
+  has_many :musics, :through => :albums
   validates :first_name,
             :presence => true,
             :length => {:minimum => 4},
