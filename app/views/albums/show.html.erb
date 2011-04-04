@@ -11,8 +11,10 @@
 </p>
 
 <p>
-  <b>Artist:</b>
-  <%= @album.artist.name %>
+  <b>Artists:</b>
+  <% @album.artists.each do |a| %>
+    <%= link_to a.name, a %>  
+  <% end %>
 </p>
 
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110321025549) do
+ActiveRecord::Schema.define(:version => 20110404210336) do
 
   create_table "albums", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(:version => 20110321025549) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "artist_id"
+  end
+
+  create_table "albums_artists", :id => false, :force => true do |t|
+    t.integer "artist_id"
+    t.integer "album_id"
   end
 
   create_table "artists", :force => true do |t|
