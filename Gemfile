@@ -10,6 +10,7 @@ gem 'devise' # Devise must be required before RailsAdmin
 gem 'paperclip'
 gem 'simple-navigation'
 gem 'simple_form'
+gem 'dynamic_form'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # Use unicorn as the web server
 # gem 'unicorn'

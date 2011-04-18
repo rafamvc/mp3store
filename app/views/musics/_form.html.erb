@@ -1,4 +1,5 @@
 <%= simple_form_for @music do |f| %>
+    <%= f.error_messages %> 
     <%= f.input :name %>
     <%= f.input :length_in_sec %>
     <%= f.association :album %>
