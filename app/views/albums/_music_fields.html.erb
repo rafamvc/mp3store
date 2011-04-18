@@ -1,4 +1,6 @@
-<%= f.input :name%>
-<%= f.input :length_in_sec, :label => 'Length'%>
-<%= f.input :mp3%>
-<%= f.input :_destroy, :as => :boolean %>  
+<div class="fields">
+  <%= f.input :name%>
+  <%= f.input :length_in_sec, :label => 'Length'%>
+  <%= f.input :mp3%>
+  <%= link_to_remove_fields "remove", f %> 
+</div>
