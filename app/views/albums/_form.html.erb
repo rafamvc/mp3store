@@ -1,7 +1,17 @@
 <%= simple_form_for @album do |f| %>
+    <%= f.error_messages %> 
     <%= f.input :name %>
     <%= f.input :released_at %>
     <%= f.association :artists, :as => :check_boxes %>
+    
+    <h3>Songs: </h3>
+    <%= f.simple_fields_for :musics do |fmusic| %>
+      <%= fmusic.input :name%>
+      <%= fmusic.input :length_in_sec, :label => 'Length'%>
+      <%= fmusic.input :mp3%>
+      <hr>
+    <%end %>
+    
     <%= f.submit 'Save' %>
 <% end %>
 
