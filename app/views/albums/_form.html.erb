@@ -6,9 +6,8 @@
     
     <h3>Songs: </h3>
     <%= f.simple_fields_for :musics do |fmusic| %>
-      <%= fmusic.input :name%>
-      <%= fmusic.input :length_in_sec, :label => 'Length'%>
-      <%= fmusic.input :mp3%>
+    
+    <%= render 'music_fields', :f => fmusic %>
       <hr>
     <%end %>
     
