@@ -3,5 +3,5 @@ class Album < ActiveRecord::Base
   validates :name, :presence => true
   has_many :musics, :dependent => :destroy, :inverse_of => :album
   
-  accepts_nested_attributes_for :musics, :reject_if => lambda { |a| a[:name].blank? && a[:mp3].blank? }
+  accepts_nested_attributes_for :musics, :reject_if => lambda { |a| a[:name].blank? && a[:mp3].blank? }, :allow_destroy => true  
 end
