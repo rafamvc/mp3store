@@ -1,15 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  biography: MyText
+jason:
+  first_name: Jason
+  last_name: Mraz
+  biography: Born in the midwest, now he lives in san diego.
   dob: 2011-03-14
-  age: 1
+  age: 30
 
-two:
-  first_name: MyString
-  last_name: MyString
-  biography: MyText
+dave:
+  first_name: Dave 
+  last_name: Matthews
+  biography: Born in South Africa, now he lives in New York.
   dob: 2011-03-14
-  age: 1
+  age: 40

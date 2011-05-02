@@ -1,11 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
+top_hits:
+  name: Dave Matthews top hits
   released_at: 2011-03-20
-  artist: 
 
-two:
-  name: MyString
+live:
+  name: live on earth
   released_at: 2011-03-20
-  artist: 
+

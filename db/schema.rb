@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(:version => 20110404210336) do
   create_table "albums", :force => true do |t|
     t.string   "name"
     t.date     "released_at"
+    t.integer  "artist_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "artist_id"
   end
 
   create_table "albums_artists", :id => false, :force => true do |t|
