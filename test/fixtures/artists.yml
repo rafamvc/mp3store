@@ -4,7 +4,7 @@ jason:
   first_name: Jason
   last_name: Mraz
   biography: Born in the midwest, now he lives in san diego.
-  dob: 2011-03-14
+  dob: <%= 30.years.ago.to_s(:db) %>
   age: 30
 
 dave:

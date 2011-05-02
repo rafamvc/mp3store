@@ -3,8 +3,9 @@
 top_hits:
   name: Dave Matthews top hits
   released_at: 2011-03-20
+  artists: dave
 
 live:
   name: live on earth
   released_at: 2011-03-20
-
+  artists: jason, dave
